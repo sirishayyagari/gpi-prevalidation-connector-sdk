@@ -17,15 +17,24 @@ import com.swift.gpi.preval.ApiException;
 import com.swift.gpi.preval.model.AccountVerificationRequest;
 import com.swift.gpi.preval.model.AccountVerificationResponse1;
 import com.swift.gpi.preval.model.ErrorCodeConsumer;
+import org.everit.json.schema.ValidationException;
 import org.junit.Test;
 import org.junit.Ignore;
-
+import org.json.*;
+import java.io.File;
+import java.io.FileWriter;
+import org.everit.json.schema.Schema;
+import org.everit.json.schema.loader.SchemaLoader;
+import javax.xml.*;
+import org.everit.*;
 import java.util.*;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.threeten.bp.ZoneOffset;
 import org.threeten.bp.ZonedDateTime;
 
+import org.json.JSONObject;
+import org.json.JSONTokener;
+import org.junit.Test;
 import java.io.IOException;
 
 
@@ -75,37 +84,73 @@ public class VerifyAccountApiTest {
      *          if the Api call fails
      */
     @Test
-    public void verifyAccountTest() throws ApiException {
-      String jsonStr1 = "{\"correlation_identifier\":\"SCENARIO1-CORRID-001\",\"context\":\"BENR\",\"uetr\":\"b916a97d-a699-4f20-b8c2-2b07e2684a27\",\"creditor_account\":\"GB3112000000001987426375\",\"creditor_name\":\"John Doe\",\"creditor_address\":{\"country\": \"GB\"},\"creditor_organisation_identification\":{\"any_bic\":\"BIC1GB51\"}}";
-      Gson g = new Gson();
-      AccountVerificationRequest body = null;
-      body = g.fromJson(jsonStr1, AccountVerificationRequest.class);
+    public void verifyAccountTest() throws ApiException, ValidationException, IOException {
+
+        String jsonStr1 = "{\"correlation_identifier\":\"SCENARIO1-CORRID-001\",\"context\":\"BENR\",\"uetr\":\"b916a97d-a699-4f20-b8c2-2b07e2684a27\",\"creditor_account\":\"GB3112000000001987426375\",\"creditor_name\":\"John Doe\",\"creditor_address\":{\"country\": \"GB\"},\"creditor_organisation_identification\":{\"any_bic\":\"BIC1GB51\"}}";
+       // String filePath = new File("/SWIFT-API-gpi-prevalidation-account-verification-request-1.0.7.json").getAbsolutePath();
+
+        JSONObject jsonSchema = new JSONObject(
+                new JSONTokener(VerifyAccountApiTest.class.getResourceAsStream("/SWIFT-API-gpi-prevalidation-account-verification-request-1.0.7.json")));
+
+        JSONObject jsonSubject = new JSONObject(
+              new JSONTokener(VerifyAccountApiTest.class.getResourceAsStream("/request.json")));
+
+        Schema schema = SchemaLoader.load(jsonSchema);
+        schema.validate(jsonSubject);
+
+        Gson g = new Gson();
+        AccountVerificationRequest body = null;
+        body = g.fromJson(jsonStr1, AccountVerificationRequest.class);
         String jsonStr = g.toJson(body);
         System.out.println(jsonStr);
-      String laUApplicationID = "001";
-      String laUVersion = "1.0";
-      String laUCallTime = getDateTimeInZulu();
-      String laURequestNonce = UUID.randomUUID().toString();
-      String laUSigned = "(ApplAPIKey=yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B),(RBACRole=[Update/Scope/BANABEBB],(x-bic=CCLABEB0))";
-      // String laUSignature = "JSG3wWUvH51blAmhkkzidw==";
-      String xBic = "CCLABEB0";
-      String subjectDN = "o=cclausb0,o=swift" ;
-      String institution = "CCLABEB0";
+        String laUApplicationID = "001";
+        String laUVersion = "1.0";
+        String laUCallTime = getDateTimeInZulu();
+        String laURequestNonce = UUID.randomUUID().toString();
+        String laUSigned = "(ApplAPIKey=yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B),(RBACRole=[Update/Scope/BANABEBB],(x-bic=CCLABEB0))";
+        // String laUSignature = "JSG3wWUvH51blAmhkkzidw==";
+        String xBic = "CCLABEB0";
+        String subjectDN = "o=cclausb0,o=swift" ;
+        String institution = "CCLABEB0";
 
-      String laUSignature = calculateLAU(laUApplicationID, laUCallTime,laURequestNonce,laUSigned, LAUKEY, ABSPATH, jsonStr);
-      System.out.print("\n ABSPATH: "+ABSPATH);
-      System.out.print("\n laUApplicationID: "+laUApplicationID);
-      System.out.print("\n laUCallTime: "+laUCallTime);
-      System.out.print("\n laURequestNonce:"+laURequestNonce);
-      System.out.print("\n laUSigned:"+laUSigned);
-      System.out.print("\n LAUKEY:"+LAUKEY);
-      System.out.print("\n jsonStr:"+jsonStr);
-      System.out.print("\n laUSignature:"+laUSignature+"\n");
-      System.out.print("\n body:"+body+"\n");
-      System.out.flush();
-      final VerifyAccountApi api = new VerifyAccountApi();
-      AccountVerificationResponse1 response = api.verifyAccount(body, laUApplicationID, laUVersion, laUCallTime, laURequestNonce, laUSigned, laUSignature, xBic, subjectDN, institution);
-      System.out.print("\n"+response);
+        String laUSignature = calculateLAU(laUApplicationID, laUCallTime,laURequestNonce,laUSigned, LAUKEY, ABSPATH, jsonStr);
+        System.out.print("\n ABSPATH: "+ABSPATH);
+        System.out.print("\n laUApplicationID: "+laUApplicationID);
+        System.out.print("\n laUCallTime: "+laUCallTime);
+        System.out.print("\n laURequestNonce:"+laURequestNonce);
+        System.out.print("\n laUSigned:"+laUSigned);
+        System.out.print("\n LAUKEY:"+LAUKEY);
+        System.out.print("\n jsonStr:"+jsonStr);
+        System.out.print("\n laUSignature:"+laUSignature+"\n");
+        System.out.print("\n body:"+body+"\n");
+
+        final VerifyAccountApi api = new VerifyAccountApi();
+        AccountVerificationResponse1 response = api.verifyAccount(body, laUApplicationID, laUVersion, laUCallTime, laURequestNonce, laUSigned, laUSignature, xBic, subjectDN, institution);
+
+        System.out.println(response);
+
+
+        try (FileWriter file = new FileWriter("src/test/resources/response.json")) {
+            file.write(response.toString());
+            System.out.println("Successfully Copied JSON Object to File...");
+            System.out.println("\nJSON Object: " + response);
+            JSONObject jsonSchema1 = new JSONObject(
+                    new JSONTokener(VerifyAccountApiTest.class.getResourceAsStream("/SWIFT-API-gpi-prevalidation-account-verification-response-1.0.7.json")));
+
+            JSONObject jsonSubject1 = new JSONObject(
+                    new JSONTokener(VerifyAccountApiTest.class.getResourceAsStream("/response.json")));
+
+            Schema schema1 = SchemaLoader.load(jsonSchema1);
+
+            try{
+                schema1.validate(jsonSubject1);
+            } catch (ValidationException e){
+                e.printStackTrace();
+            }
+
+        }
+
+        //System.out.print("\n"+response);
     }
     public static String getDateTimeInZulu(){
        return ZonedDateTime.now(ZoneOffset.UTC).toString();
@@ -143,4 +188,8 @@ public class VerifyAccountApiTest {
        }
        return "";
    }
+
+    public void givenInvalidInput_whenValidating_thenInvalid() throws ValidationException {
+
+    }
 }

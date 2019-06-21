@@ -1,0 +1,10 @@
+class AccountVerificationResponse1 {
+    correlationIdentifier: SCENARIO1-CORRID-001
+    response: class ValidationCheckReponse1 {
+        accountValidationStatus: PASS
+        creditorAccountMatch: MTCH
+        creditorNameMatch: NOAP
+        creditorAddressMatch: NOAP
+        creditorOrganisationIdentificationMatch: NOAP
+    }
+}
