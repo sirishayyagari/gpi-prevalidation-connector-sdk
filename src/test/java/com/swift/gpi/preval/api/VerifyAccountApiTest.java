@@ -125,15 +125,18 @@ public class VerifyAccountApiTest {
         System.out.print("\n body:"+body+"\n");
 
         final VerifyAccountApi api = new VerifyAccountApi();
-        AccountVerificationResponse1 response = api.verifyAccount(body, laUApplicationID, laUVersion, laUCallTime, laURequestNonce, laUSigned, laUSignature, xBic, subjectDN, institution);
 
-        System.out.println(response);
+
+        AccountVerificationResponse1 response = api.verifyAccount(body, laUApplicationID, laUVersion, laUCallTime, laURequestNonce, laUSigned, laUSignature, xBic, subjectDN, institution);
+        Gson gsonObj = new GsonBuilder().setPrettyPrinting().create();
+        // converts object to json string
+        String json = gsonObj.toJson(response);
 
 
         try (FileWriter file = new FileWriter("src/test/resources/response.json")) {
-            file.write(response.toString());
+            file.write(json.toString());
             System.out.println("Successfully Copied JSON Object to File...");
-            System.out.println("\nJSON Object: " + response);
+            System.out.println("\nJSON Object: " + json);
             JSONObject jsonSchema1 = new JSONObject(
                     new JSONTokener(VerifyAccountApiTest.class.getResourceAsStream("/SWIFT-API-gpi-prevalidation-account-verification-response-1.0.7.json")));
 
@@ -144,6 +147,7 @@ public class VerifyAccountApiTest {
 
             try{
                 schema1.validate(jsonSubject1);
+                System.out.println("Validation Succesfully"+jsonSubject1);
             } catch (ValidationException e){
                 e.printStackTrace();
             }

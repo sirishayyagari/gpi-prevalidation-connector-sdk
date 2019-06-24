@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f55c9fc-00e1-4b5c-8bb8-4d548d7988b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_everit_json_org_everit_json_schema_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160212.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gpi-prevalidation-connector-sdk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gpi-prevalidation-connector-sdk.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swift/gpi/preval/model/AccountVerificationResponse1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swift/gpi/preval/model/AccountVerificationResponse1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/swift/gpi/preval/api/VerifyAccountApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swift/gpi/preval/api/VerifyAccountApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/response.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/response.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="207" column="21" selection-start-line="207" selection-start-column="21" selection-end-line="207" selection-end-column="21" />
+            <state relative-caret-position="167">
+              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -41,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/swift/gpi/preval/api/VerifyAccountApiTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="129" column="36" selection-start-line="129" selection-start-column="36" selection-end-line="129" selection-end-column="36" />
+            <state relative-caret-position="319">
+              <caret line="149" column="72" selection-start-line="149" selection-start-column="72" selection-end-line="149" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,19 +45,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/SWIFT-API-gpi-prevalidation-account-verification-response-1.0.7.json">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="131" column="17" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="17" />
+            <state relative-caret-position="282">
+              <caret line="1231" selection-start-line="1231" selection-end-line="1231" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/response.json">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/swift/gpi/preval/model/AccountVerificationResponse1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="195">
+              <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.1/gson-2.8.1.jar!/com/google/gson/annotations/SerializedName.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swagger.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="426" column="64" selection-start-line="426" selection-start-column="64" selection-end-line="426" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -72,10 +84,37 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/swift/gpi/preval/api/VerifyAccountApi.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="245">
-              <caret line="211" column="53" selection-start-line="211" selection-start-column="53" selection-end-line="211" selection-end-column="53" />
+              <caret line="214" selection-start-line="214" selection-end-line="214" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/swift/gpi/preval/ApiClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="709" selection-start-line="709" selection-end-line="709" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/swift/gpi/preval/JSON.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="136" column="4" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/reflect/Type.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -92,6 +131,7 @@
       <find>AccountVerificationRequest</find>
       <find>maven-javadoc-plugin-version</find>
       <find>creditor</find>
+      <find>correlation_identifier</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,8 +140,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/request.json" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/swift/gpi/preval/model/AccountVerificationResponse1.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/swift/gpi/preval/api/VerifyAccountApiTest.java" />
       </list>
     </option>
@@ -168,6 +209,36 @@
               <item name="gpi-prevalidation-connector-sdk" type="b2602c69:ProjectViewProjectNode" />
               <item name="gpi-prevalidation-connector-sdk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gpi-prevalidation-connector-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gpi-prevalidation-connector-sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gpi-prevalidation-connector-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gpi-prevalidation-connector-sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="preval" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gpi-prevalidation-connector-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gpi-prevalidation-connector-sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="preval" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gpi-prevalidation-connector-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gpi-prevalidation-connector-sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -227,7 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VerifyAccountApiTest (1)">
+  <component name="RunManager" selected="JUnit.VerifyAccountApiTest.verifyAccountTest">
     <configuration name="VerifyAccountApiTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gpi-prevalidation-connector-sdk" />
       <extension name="coverage">
@@ -280,8 +351,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VerifyAccountApiTest (1)" />
         <item itemvalue="JUnit.VerifyAccountApiTest.verifyAccountTest" />
+        <item itemvalue="JUnit.VerifyAccountApiTest (1)" />
         <item itemvalue="JUnit.VerifyAccountApiTest" />
       </list>
     </recent_temporary>
@@ -298,50 +369,50 @@
       <updated>1560867572539</updated>
       <workItem from="1560867575661" duration="4466000" />
       <workItem from="1560888107354" duration="732000" />
-      <workItem from="1560975103093" duration="16732000" />
+      <workItem from="1560975103093" duration="20879000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VerifyAccountApiTest_(1) - 2019.06.21 at 12h 15m 08s.xml">
-      <configuration name="VerifyAccountApiTest (1)" configurationId="JUnit" />
+    <history-entry file="VerifyAccountApiTest_verifyAccountTest - 2019.06.24 at 09h 51m 45s.xml">
+      <configuration name="VerifyAccountApiTest.verifyAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifyAccountApiTest_(1) - 2019.06.21 at 12h 15m 32s.xml">
-      <configuration name="VerifyAccountApiTest (1)" configurationId="JUnit" />
+    <history-entry file="VerifyAccountApiTest_verifyAccountTest - 2019.06.24 at 09h 52m 58s.xml">
+      <configuration name="VerifyAccountApiTest.verifyAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifyAccountApiTest_(1) - 2019.06.21 at 12h 16m 27s.xml">
-      <configuration name="VerifyAccountApiTest (1)" configurationId="JUnit" />
+    <history-entry file="VerifyAccountApiTest_verifyAccountTest - 2019.06.24 at 09h 53m 03s.xml">
+      <configuration name="VerifyAccountApiTest.verifyAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifyAccountApiTest_(1) - 2019.06.21 at 12h 18m 52s.xml">
-      <configuration name="VerifyAccountApiTest (1)" configurationId="JUnit" />
+    <history-entry file="VerifyAccountApiTest_verifyAccountTest - 2019.06.24 at 09h 57m 46s.xml">
+      <configuration name="VerifyAccountApiTest.verifyAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifyAccountApiTest_(1) - 2019.06.21 at 14h 19m 56s.xml">
-      <configuration name="VerifyAccountApiTest (1)" configurationId="JUnit" />
+    <history-entry file="VerifyAccountApiTest_verifyAccountTest - 2019.06.24 at 10h 00m 18s.xml">
+      <configuration name="VerifyAccountApiTest.verifyAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifyAccountApiTest_(1) - 2019.06.21 at 14h 20m 33s.xml">
-      <configuration name="VerifyAccountApiTest (1)" configurationId="JUnit" />
+    <history-entry file="VerifyAccountApiTest_verifyAccountTest - 2019.06.24 at 10h 03m 03s.xml">
+      <configuration name="VerifyAccountApiTest.verifyAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifyAccountApiTest_(1) - 2019.06.21 at 14h 21m 46s.xml">
-      <configuration name="VerifyAccountApiTest (1)" configurationId="JUnit" />
+    <history-entry file="VerifyAccountApiTest_verifyAccountTest - 2019.06.24 at 10h 16m 09s.xml">
+      <configuration name="VerifyAccountApiTest.verifyAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifyAccountApiTest_(1) - 2019.06.21 at 14h 25m 13s.xml">
-      <configuration name="VerifyAccountApiTest (1)" configurationId="JUnit" />
+    <history-entry file="VerifyAccountApiTest_verifyAccountTest - 2019.06.24 at 10h 18m 13s.xml">
+      <configuration name="VerifyAccountApiTest.verifyAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifyAccountApiTest_(1) - 2019.06.21 at 15h 28m 58s.xml">
-      <configuration name="VerifyAccountApiTest (1)" configurationId="JUnit" />
+    <history-entry file="VerifyAccountApiTest_verifyAccountTest - 2019.06.24 at 10h 18m 20s.xml">
+      <configuration name="VerifyAccountApiTest.verifyAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifyAccountApiTest_(1) - 2019.06.21 at 16h 15m 16s.xml">
-      <configuration name="VerifyAccountApiTest (1)" configurationId="JUnit" />
+    <history-entry file="VerifyAccountApiTest_verifyAccountTest - 2019.06.24 at 10h 21m 36s.xml">
+      <configuration name="VerifyAccountApiTest.verifyAccountTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21930000" />
+    <option name="totallyTimeSpent" value="26077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="793" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15236051" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2911302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -349,9 +420,9 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40798858" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39942938" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -412,25 +483,50 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>gsonObj.toJson(response)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mapper.writeValueAsString(response)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gson.fromJson(body, returnType)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gson.fromJson(jsonReader, returnType)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>json.deserialize(respBody, returnType)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>respBody</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>response.body()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/swift/sdk/oas/gpi/preval/auth/ApiKeyAuth.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/swift/sdk/oas/gpi/preval/model/AccountValidationCheckContext1Code.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/swift/sdk/oas/gpi/preval/model/AccountValidationResponse1Code.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/swift/sdk/oas/gpi/preval/api/VerifyAccountApi.java" />
-    <entry file="file://$PROJECT_DIR$/swagger.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="32" selection-end-line="1182" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="207" column="21" selection-start-line="207" selection-start-column="21" selection-end-line="207" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/io/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -455,22 +551,8 @@
     <entry file="file://$PROJECT_DIR$/response.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/swift/gpi/preval/api/VerifyAccountApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="211" column="53" selection-start-line="211" selection-start-column="53" selection-end-line="211" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/response.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/SWIFT-API-gpi-prevalidation-account-verification-response-1.0.7.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -479,10 +561,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/swift/gpi/preval/api/VerifyAccountApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/reflect/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/swift/gpi/preval/ApiClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="709" selection-start-line="709" selection-end-line="709" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/swift/gpi/preval/JSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="136" column="4" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swagger.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="426" column="64" selection-start-line="426" selection-start-column="64" selection-end-line="426" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.1/gson-2.8.1.jar!/com/google/gson/annotations/SerializedName.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="1231" selection-start-line="1231" selection-end-line="1231" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/swift/gpi/preval/model/AccountVerificationResponse1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/swift/gpi/preval/api/VerifyAccountApiTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="129" column="36" selection-start-line="129" selection-start-column="36" selection-end-line="129" selection-end-column="36" />
+        <state relative-caret-position="319">
+          <caret line="149" column="72" selection-start-line="149" selection-start-column="72" selection-end-line="149" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

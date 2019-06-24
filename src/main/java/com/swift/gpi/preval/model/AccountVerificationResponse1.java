@@ -13,6 +13,8 @@
 package com.swift.gpi.preval.model;
 
 import java.util.Objects;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -28,7 +30,7 @@ import java.io.IOException;
 @Schema(description = "Beneficiary account verification response.")
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2019-06-19T14:52:07.265298-04:00[America/New_York]")public class AccountVerificationResponse1 {
 
-  @SerializedName("correlation_identifier")
+  @SerializedName(value="correlation_identifier")
   private String correlationIdentifier = null;
 
   @SerializedName("response")
