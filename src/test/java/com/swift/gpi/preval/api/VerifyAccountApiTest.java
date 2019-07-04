@@ -137,17 +137,17 @@ public class VerifyAccountApiTest {
             file.write(json.toString());
             System.out.println("Successfully Copied JSON Object to File...");
             System.out.println("\nJSON Object: " + json);
-            JSONObject jsonSchema1 = new JSONObject(
+            JSONObject responseSchemaFile = new JSONObject(
                     new JSONTokener(VerifyAccountApiTest.class.getResourceAsStream("/SWIFT-API-gpi-prevalidation-account-verification-response-1.0.7.json")));
 
-            JSONObject jsonSubject1 = new JSONObject(
-                    new JSONTokener(VerifyAccountApiTest.class.getResourceAsStream("/response.json")));
+            //JSONObject responsePayload = new JSONObject(
+            //        new JSONTokener(VerifyAccountApiTest.class.getResourceAsStream("/response.json")));
 
-            Schema schema1 = SchemaLoader.load(jsonSchema1);
+            Schema responseSchema = SchemaLoader.load(responseSchemaFile);
 
             try{
-                schema1.validate(jsonSubject1);
-                System.out.println("Validation Succesfully"+jsonSubject1);
+                responseSchema.validate(new JSONObject(json));
+                System.out.println("Response payload validated against schema successfully!");
             } catch (ValidationException e){
                 e.printStackTrace();
             }
